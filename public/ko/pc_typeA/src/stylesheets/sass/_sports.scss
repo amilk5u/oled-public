@@ -1,0 +1,170 @@
+@charset "UTF-8";
+/* sports */
+#subVisual.sports_visual {
+   background-image:url(../../images/sports/sub_visual.jpg);
+   text-align:center;
+   .txt_wrap {width:100%; position:absolute; bottom:em(65); color:$white; font-size:em(88); letter-spacing:3.2px;}
+}
+#container.sports_contents {
+   padding:0 0 90px;
+   .sports_step01 {
+      background-color:$gray5;
+      .step_box01 {
+         padding:120px 0 100px; text-align:center;
+         .step_cont {
+            .step_img {
+               padding:60px 120px 0; max-width:1480px; margin:0 auto;
+               img {width:100%;}
+               p {padding:15px 0 0; font-size:16px; line-height:20px; text-align:left;}
+            }
+         }
+      }
+   }
+   .sports_step02 {
+      background-color:$white;
+      .step_box01 {
+         padding:120px 0 100px; text-align:center;
+         .step_cont {
+            max-width:1480px; margin:0 auto; padding:0 120px;
+            .step_img {
+               padding:em(50) 0 em(70);
+               img {width:100%;}
+               p {padding:15px 0 0; font-size:16px; line-height:20px; text-align:left;}
+            }
+            .partner_list {
+               padding:em(80) em(120); background-color:$gray5;
+               ul {
+                  display:inline-block;
+                  @extend %clearfix;
+                  li {
+                     float:left; margin:0 0 0 em(80);
+                     &:first-child {margin:0;}
+                     img {height:em(135);}
+                     p {color:#646668; font-weight:600; padding:em(30) 0 0; font-size:22px;}
+                  }
+               }
+            }
+         }
+      }
+   }
+   .sports_step03 {
+      background-color:$gray5;
+      .step_box01 {
+         padding:120px 0 0; text-align:center;
+         .step_cont {
+            .step_img {
+               width:100%; min-width:1280px; padding:80px 0 0; margin:0 auto; position:relative;
+               img {width:100%;}
+               p {padding:0 120px; text-align:left; color:#fff; position:absolute; bottom:25px; font-size:16px;}
+            }
+         }
+      }
+   }
+   .sports_step04 {
+      background-color:$white;
+      .step_box01 {
+         h2 {font-size:38px; padding:0 0 30px;}
+         padding:120px 0 0; text-align:center; position:relative;
+         .link_box {
+            a {
+               &:hover:after {
+                  background:url(../../images/sports/lg_thinq_icon_hover.png) 0 0 no-repeat;
+               }
+               &:after {
+                  @include transition;
+                  width:124px; height:19px; content:""; display:inline-block; margin:0 0 -1px 14px;
+                  background:url(../../images/sports/lg_thinq_icon.png) 0 0 no-repeat;
+               }
+            }
+         }
+      }
+      .step_box02 {
+         max-width:1280px; padding:60px 50px; background:$gray5; margin:70px auto 20px;
+         @include boxSizing;
+         ul {
+            width:960px; margin:0 auto;
+            @extend %clearfix;
+            li {
+               float:left; margin:0 0 0 1.9%;
+               img {width:100%;}
+               &:nth-of-type(1) {width:21.3%; margin:0;}
+               &:nth-of-type(2) {
+                  width:52.8%;
+                  strong {width:60.3%;}
+                  img {margin:-19px 0 0 0;}
+               }
+               &:nth-of-type(3) {width:22.1%; margin-top:-1px;}
+               strong {
+                  width:100%; display:block; margin:20px auto 5px; font-size:24px;
+                  @include boxSizing;
+               }
+            }
+         }
+      }
+      .step_box03 {
+         max-width:1280px; padding:60px; background:$gray5; margin:20px auto 100px;
+         @include boxSizing;
+         strong {width:100%; padding:15px 0 15px; display:block; background-color:#e1e2e3; font-size:22px;}
+         .img_wrap {padding:30px 0;}
+         ul {
+            @extend %clearfix;
+            li {
+               margin:0 0 0 0.86%; float:left; text-align:center; border:1px solid #e1e2e3;
+               @include boxSizing;
+               .img {height:30px;}
+               &:nth-of-type(1) {width:23.27%; margin:0;}
+               &:nth-of-type(2) {width:27.58%;}
+               &:nth-of-type(3) {width:23.27%;}
+               &:nth-of-type(4) {width:23.27%;}
+            }
+         }
+         .box {border:1px solid #e1e2e3; margin:10px 0 0;}
+         p {padding:15px 0 0; font-size:16px; line-height:20px; text-align:left; color:#646668;}
+      }
+      .step_img img {width:100%;}
+   }
+   .sports_step05 {
+      .step_box01 {
+         padding:120px 0 0; text-align:center;
+         .img_wrap {
+            width:100%; padding:70px 0 0; position:relative;
+            img {width:100%;}
+            p {padding:0 120px; text-align:left; color:$white; position:absolute; bottom:25px; font-size:16px;}
+         }
+      }
+   }
+   .sports_step06 {
+      .step_box01 {
+         padding:120px 0 115px; text-align:center; background:linear-gradient(to bottom, $white, #e5e5e5 60%);
+         .link_box {padding:240px 0 0; background:url(../../images/sports/sports_step06_link.png) 50% -30px no-repeat;}
+         .step_cont {
+            overflow:hidden;
+            .step_img {
+               max-width:1480px; padding:100px 120px 20px; margin:0 auto; position:relative;
+               .img_box {
+                  width:100%; padding:0 0 57%; position:relative; background:url(../../images/sports/sports_step06_img.jpg) 0 0 no-repeat; background-size:cover;
+                  &:after {width:100%; height:100%; content:""; position:absolute; top:0; left:0;}
+                  .video {
+                     width:99%; position:absolute; top:1%; left:50%; transform:translate(-50%, 0);
+                     video {width:100%;}
+                  }
+               }
+            }
+            p {max-width:1480px; margin:0 auto; padding:0 120px; font-size:16px; text-align:left;}
+         }
+      }
+      .step_box02 {
+         text-align:center; padding:100px 120px 120px; background-color:#f4f5f6;
+         strong {font-size:76px;}
+         .video_wrap {width:100%; height:0; padding:0 0 53.5%; margin:65px 0 0;}
+      }
+   }
+}
+
+
+
+
+
+
+
+

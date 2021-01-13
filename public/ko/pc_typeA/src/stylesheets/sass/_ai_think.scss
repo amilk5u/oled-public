@@ -1,0 +1,142 @@
+@charset "UTF-8";
+/* life style */
+#subVisual.ai_think_visual {
+   background-image:url(../../images/ai_think/sub_visual.jpg); text-align:center;
+   .txt_wrap {width:100%; position:absolute; bottom:em(65); color:$white; font-size:em(88); letter-spacing:3.2px}
+}
+#container.ai_think_contents {
+   padding:0 0 120px;
+   .ai_think_step01 {
+      &.bubble_cont {
+         .img_wrap {
+            position:relative;
+            .speech_bubble {
+               position:absolute;bottom:auto; left:45%; top:20%; padding:em(25) em(35); background-color:$white;
+               border-radius:em(20); font-size:em(28); font-weight:$bold; color:$gray1; box-shadow:10px 10px 20px rgba(0, 0, 0, 0.1);
+               &:after {
+                  width:em(40); height:em(30); content:""; display:block; position:absolute; left:57%; bottom:em(-27);
+                  background:url(../../images/ai_think/right_tail.png) 0 0 no-repeat; background-size:contain;
+               }
+            }
+         }
+      }
+      .step_box01 {
+         padding:150px 0 0; text-align:center; position:relative;
+         &.logo_wrap {
+            .img_wrap {
+               position:relative;
+               .img_box {
+                  width:820px; position:absolute; top:64%; left:50%; transform:translate(-50%, 0);
+                  div.un_icon:first-child {
+                     img:nth-of-type(1) {padding:em(40) 0 0 0; width:em(222);}
+                  }
+                  div {
+                     img {
+                        width:auto; padding:em(30) 0 0 0;
+                        &:first-child {padding:em(30) em(30) 0 0;}
+                     }
+                     &:nth-of-type(1) {
+                        img:nth-of-type(1) {width:em(300); padding:em(40) em(30) 0 0;}
+                        img:nth-of-type(2) {width:em(222);}
+                     }
+                     &:nth-of-type(2) {
+                        img:nth-of-type(1) {width:em(240);}
+                        img:nth-of-type(2) {width:em(250);}
+                     }
+                  }
+               }
+            }
+         }
+         h1 {
+            color:$gray1;
+            &.first_title {padding:20px 0 0;}
+         }
+         p {
+            font-size:22px; padding:35px 0 0; color:$gray2;
+            &.top_title {font-size:30px; padding:0 0 0 22px; color:$gray1;}
+            &.disclaimer {margin:0 120px; text-align:left; font-size:16px; color:$white; position:absolute; bottom:1%; line-height:24px;}
+            &.black_color {color:$gray2;}
+         }
+         img {width:100%; padding:em(75) 0 0;}
+      }
+   }
+   .ai_think_step02 {
+      padding:120px 120px 0;
+      div:first-child {margin:0;}
+      & > div {
+         padding:em(100) em(100); background-color:$gray5; margin:em(30) 0 0;
+         .step_title {
+            p.top_title {font-size:em(30); padding:0 0 em(10); color:$gray1;}
+            h2 {font-size:em(72); color:$gray1;}
+            p {font-size:em(22); line-height:em(30); padding:em(30) 0 0; color:$gray2;}
+         }
+         .img_wrap {
+            padding:em(70) 0 0; position:relative;
+            .left_txt {text-align:left;}
+            img {width:100%;}
+            p {
+               font-size:16px; padding:15px 0 0; line-height:22px; position:absolute; bottom:-37px;
+               &.txt_oder {bottom:-60px;}
+            }
+            .bubble_wrap {
+               position:absolute; left:10%; top:20%;
+               .three_bubble {
+                  position:static; width:max-content; padding:em(27) em(30); background-color:$white; box-shadow:10px 10px 20px rgba(0, 0, 0, 0.1);
+                  border-radius:em(20); font-size:em(28); font-weight:$bold; color:$gray1; margin:em(35) 0 0;
+                  &:first-child {margin:0;}
+                  span {
+                     position:relative; padding:0; display:inline;
+                     &:after {
+                        width:em(40); height:em(30); content:""; display:block; position:absolute; left:3%; bottom:em(-50);
+                        background:url(../../images/ai_think/left_tail.png) 0 0 no-repeat; background-size:contain;
+                     }
+                  }
+               }
+            }
+         }
+      }
+      &.bubble_cont {
+         .img_wrap {
+            position:relative;
+            .speech_bubble {
+               position:absolute; bottom:auto; box-shadow:10px 10px 20px rgba(0, 0, 0, 0.1);
+               padding:em(25) em(35); background-color:$white; border-radius:em(20); font-size:em(28); font-weight:$bold; color:$gray1;
+               &:after {
+                  width:em(40); height:em(30); content:""; display:block; position:absolute; left:84%; bottom:em(-27);
+                  background:url(../../images/ai_think/left_tail.png) 0 0 no-repeat; background-size:contain;
+               }
+            }
+         }
+         &.bubble_box02 {
+            .speech_bubble {
+               left:52%; top:36%;
+               &:after {background-image:url(../../images/ai_think/left_tail.png); left:45%;}
+            }
+         }
+         &.bubble_box03 {
+            .speech_bubble {
+               left:50%; top:28%;
+               &:after {background-image:url(../../images/ai_think/right_tail.png); left:45%;}
+            }
+         }
+         &.bubble_box04 {
+            .speech_bubble {
+               left:27%; top:62%;
+               &:after {background-image:url(../../images/ai_think/right_tail.png);}
+            }
+         }
+      }
+      .step_box02 {text-align:right;}
+   }
+}
+
+
+
+
+
+
+
+
+
+
+

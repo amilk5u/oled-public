@@ -1,0 +1,247 @@
+@charset "UTF-8";
+/* core tech */
+#subVisual.core_visual {
+   background-image:url(../../images/core/sub_visual.jpg); text-align:center;
+   .txt_wrap {width:100%; position:absolute; bottom:em(100); color:$white; font-size:em(88); letter-spacing:3.2px;}
+}
+
+#container.core_contents {
+   padding:150px 0 0;
+   .core_step01 {
+      padding:0 120px;
+      p.tit {
+         font-size:22px; line-height:30px; color:$gray2; font-weight:$regular; text-align:center;
+         span {display:block; padding:10px 0 0;}
+      }
+      .compare_wrap {
+         padding:65px 0 0; color:$white; font-size:34px; line-height:42px;
+         @extend %clearfix;
+         > div {
+            width:49.5%; height:470px; float:right; background-image:url(../../images/core/leader_bg02.jpg); position:relative;
+            @include backgroundSoltC;
+            &:first-child {float:left; background-image:url(../../images/core/leader_bg01.jpg);}
+            &:nth-of-type(2) {
+               strong {width:160px; height:42px; text-indent:-9999px; display:block; background:url(../../images/common/lg_logo_icon.png) 0 0 no-repeat; background-size:contain; margin:10px 0 0 0;}
+            }
+         }
+         .txt_wrap {
+            position:absolute; top:350px; left:45px;
+            strong {font-size:42px;}
+         }
+      }
+      p.caution {font-size:16px; line-height:24px; color:$gray2; padding:15px 0 0; font-weight:$regular;}
+   }
+   .core_step02 {
+      max-width:1920px; padding:90px 120px 120px; margin:0 auto;
+      .step_cont {
+         padding:em(95) 100px em(95); background-color:#f4f5f6;
+         p.tit {
+            line-height:30px; font-size:22px; font-weight:$regular;
+            span {display:block; padding:15px 0 0;}
+         }
+         .step_wrap {
+            padding:em(60) em(100) em(60); margin:em(80) 0 0; background-color:$white;
+            &:after {content:""; display:block; clear:both;}
+            .light_box {
+               &:after {content:""; display:block; clear:both;}
+               > div {float:left;}
+               .txt_wrap {
+                  width:20%; padding:em(80) em(55) 0 0; line-height:em(38); font-size:em(34);
+                  strong {font-size:em(42);}
+                  em {color:#706f6f;}
+               }
+               .img_wrap {
+                  width:75%;
+                  img {width:100%;}
+               }
+            }
+            .last_box {
+               padding:em(70) 0 0;
+               strong {
+                  width:em(170); height:36px; text-indent:-9999px; display:block; margin:5px 0 0;
+                  background:url(../../images/common/lg_logo_icon_gray.gif) 0 0 no-repeat; background-size:contain;
+               }
+            }
+         }
+      }
+   }
+   .core_step03 {
+      max-width:1920px; background-color:$gray5; padding:em(120) 0 em(120); margin:0 auto; font-weight:$regular;
+      h1 {font-size:em(76); text-align:center; letter-spacing:2px;}
+      article {
+         padding:em(80) 0 0;
+         &:nth-of-type(1) {padding:em(65) 0 0;}
+         &:after {clear:both; display:block; content:"";}
+         &.left_wrap {
+            & > div {float:left;}
+            .txt_box {
+               padding:em(130) 0 0 em(60);
+            }
+         }
+         &.right_wrap {
+            display:flex; justify-content:center; align-content:space-between;
+            .txt_box {width:52.57%; text-align:right; padding:em(130) em(60) 0 0;}
+         }
+         &:after {content:""; display:block; clear:both;}
+         .img_box {
+            width:44.141%;
+            img {width:100%;}
+         }
+         .txt_box {
+            h2 {font-size:em(60);}
+            p {line-height:30px; padding:em(30) 0 0; font-size:22px;}
+         }
+      }
+   }
+   .core_step04 {
+      max-width:1280px; padding:100px 120px 120px; text-align:center; margin:0 auto;
+      strong {font-size:em(76); letter-spacing:2px;}
+      .video_wrap {height:0; padding:0 0 55.5%; margin:65px 0 0; box-shadow:2px 14px 71px 5px #dbdbdb;}
+   }
+   .core_step05 {
+      .step_box {
+         padding:95px 120px 100px; background-color:$gray5; text-align:center;
+         .step_tit {
+            line-height:em(76); padding:0 0 em(20);
+            h1 {font-size:em(80); letter-spacing:2.2px;}
+            p {
+               font-size:em(54);
+               em {color:#6d6e71;}
+               strong {
+                  img {width:em(200); margin:em(21) 0 0;}
+               }
+            }
+         }
+         .mario_interview {
+            margin:em(40) 100px 0;
+            @include displayFlexCenter(center, space-between);
+            @extend %clearfix;
+         }
+         .video_wrap {width:54%; height:0; padding:0 0 30%;}
+         .txt_wrap {
+            width:40%; margin:0 0 0 6%; text-align:left;
+            .name {
+               font-size:em(22); color:$gray2; font-weight:$regular; padding:em(35) 0 0; background-image:url(../../images/life/dotted_icon.gif);
+               @include backgroundSoltC(0, 0, no-repeat, auto em(22));
+               strong {font-size:em(48); letter-spacing:1px; color:$gray1; display:block; padding:0 0 em(10);}
+            }
+            .disc {font-size:em(36); color:$gray2; font-style:italic; font-weight:$bold; padding:em(50) 0 0; line-height:em(42);}
+         }
+      }
+   }
+   .core_step06 {
+      margin:140px 0 0;
+      h1 {font-size:em(76); text-align:center; letter-spacing:2.2px;}
+      > div {background-color:$gray5; margin:30px 120px 0; padding:100px 100px 40px; box-sizing:border-box;}
+      .step_box01 {
+         padding:em(100); margin:70px 120px 0;
+         @include displayFlexCenter(center, space-between);
+         &:after {display:block; content:""; clear:both;}
+         > div {
+            width:50%; position:relative;
+            &:after {width:1px; height:100%; display:block; content:""; background-color:#dcdde2; position:absolute; left:0; top:0;}
+         }
+         .img_box {
+            padding:0 6%;
+            &:after {right:-1px; left:auto;}
+            img {width:100%;}
+         }
+         .txt_box {
+            padding:0 5%;
+            p {
+               font-size:22px; line-height:30px;
+               span {font-size:16px; margin:55px 0 0; display:block; line-height:24px;}
+            }
+         }
+      }
+      .step_box02 {
+         h2 {font-size:em(60); text-align:center;}
+         > p {padding:15px 0 0; font-size:16px; line-height:20px; text-align:left; font-weight:$regular;}
+         .box_wrap {
+            background-color:$white; margin:50px 0 0;
+            &:after {display:block; content:""; clear:both;}
+            .box {
+               width:33.33%; float:left; text-align:center; position:relative; color:#646668; padding:80px 0;
+               &:first-child:after {display:none;}
+               &:after {width:1px; height:100%; display:block; content:""; position:absolute; background-color:$gray5; left:0; top:0;}
+               strong {display:block; padding:40px 0 0; font-size:24px;}
+               span {display:block; width:45%; background-color:$gray5; font-weight:700; margin:30px auto 0;padding:10px 0; font-size:20px;}
+               p {padding:15px 0 0;}
+               a {
+                  font-size:16px; margin:em(50) 0 0; display:inline-block; position:relative; font-weight:$semibold; padding:0 20px 3px 0;
+                  @include transition(padding, .2s);
+                  &:after {width:100%; height:1px; position:absolute; display:block; content:""; background-color:$black; bottom:0;}
+                  i {
+                     width:11px; height:7px; display:block; position:absolute; top:4px; right:0;
+                     &:before {
+                        width:4px; height:4px; display:block; content:""; border-right:1px solid $black; border-bottom:1px solid $black; position:absolute; right:0; top:1px;
+                        @include rotate(-45);
+                     }
+                     &:after {width:11px; height:1px; display:block; content:""; position:absolute; top:50%; left:0; background-color:$black;}
+                  }
+                  &:hover,
+                  &:focus {padding:0 25px 3px 0;}
+               }
+            }
+         }
+      }
+   }
+   .category_banner {
+      padding:em(100) 0 0; margin:120px 0 0; text-align:center; background-color:$gray5; letter-spacing:2.2px;
+      > strong {font-size:em(76); letter-spacing:1px}
+      ol {
+         padding:em(60) 0 0;
+         @include displayFlex;
+         @include displayFlexCenter(center, space-between);
+         li {
+            width:24.5%; height:0; padding:0 0 44.67%; background-color:$black; position:relative; color:$white;
+            @include backgroundSoltC(50%, 0);
+            &:nth-of-type(1) {background-image:url(../../images/core/category_bg01.jpg); margin:0;}
+            &:nth-of-type(2) {background-image:url(../../images/core/category_bg02.jpg);}
+            &:nth-of-type(3) {background-image:url(../../images/core/category_bg03.jpg);}
+            &:nth-of-type(4) {background-image:url(../../images/core/category_bg04.jpg);}
+            .txt_wrap {
+               width:100%; height:40%; position:absolute; left:0; top:50%;
+               strong {font-size:em(70); display:block; letter-spacing:5.8px;}
+               p {
+                  width:100%; font-size:em(22); color:#a4a4a4; line-height:em(30); position:absolute; left:50%; top:50%; font-weight:$regular; letter-spacing:.5px;
+                  @include translate(-50%, -50%);
+               }
+               a {
+                  width:em(175); padding:em(8) 0; position:absolute; bottom:0; left:50%; transform:translate(-50%); display:block; color:$white; font-size:em(24); font-weight:$semibold; letter-spacing:1.5px;
+                  @include boxSizing;
+                  @include borderSet(1px, solid, $gray2);
+                  @include borderRadius(5px);
+                  @include transition;
+                  &:hover,
+                  &:focus {color:$black; background-color:$white; border-color:$white;}
+               }
+            }
+         }
+      }
+   }
+}
+#bottomLineup.core_bottomLineup table thead th {
+   padding:0 0 em(110);
+   strong {font-size:em(32); margin:em(33) 0 em(10);}
+   span {
+      width:80%; display:block; padding:20px 0 0; margin:0 auto 15px; border-top:1px solid #c4c6c8; font-weight:600; color:#6e6e6e; position:relative; font-size:em(19);
+      &.new_size {
+         &:before {
+            width:27px; height:14px; display:inline-block; content:"NEW"; background-color:#ffe00c; color:$black; font-size:9px; line-height:14px;
+            position:absolute; top:em(8); right:em(-1); border:1px solid $gray4; font-weight:$semibold;
+         }
+      }
+   }
+   .link_wrap {padding:em(20) 0 0;}
+}
+
+
+
+
+
+
+
+
+
+

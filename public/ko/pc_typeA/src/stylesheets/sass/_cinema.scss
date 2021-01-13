@@ -1,0 +1,535 @@
+@charset "UTF-8";
+
+/* cinema */
+#subVisual.cinema_visual {
+    background-image:url(../../images/cinema/sub_visual.jpg); text-align:center; position:relative;
+    .txt_wrap {width:100%; position:absolute; bottom:em(65); color:$white; font-size:em(88); letter-spacing:3.2px}
+    &:before,
+    &:after {
+        display:block; content:""; position:absolute; bottom:30px;
+        @include backgroundSolt;
+    }
+    &:before {width:190px; height:103px; left:30px; background-image:url(../../images/cinema/cinema_partner_logo01.png);}
+    &:after {width:131px; height:58px; right:30px; background-image:url(../../images/cinema/cinema_partner_logo02.png);}
+}
+
+#container.cinema_contents {
+    background-color:#111;
+    .step_title.white_title p {color:$gray4;}
+    .cinema_step01 {
+        .step_box01 {text-align:center; padding:140px 0 0;}
+        .step_box02{
+            max-width:1480px; padding:90px 120px 0; margin:0 auto;
+            p.cation {color:#bbb; font-size:16px; padding:20px 0 0;}
+        }
+        .monitor_compare {
+            .compare_box {border:2px solid $black; background-image:url(../../images/cinema/compare_oled.jpg);}
+            .lcd_screen .img_wrap {background-image:url(../../images/cinema/compare_lcd.jpg)}
+        }
+        .step_box03 {
+            margin:90px 120px 110px; padding:95px 100px 100px; background-color:#222;
+            h1 {font-size:em(60); color:$white;}
+            .rob_interview {
+                margin:em(70) 0 0;
+                @include displayFlexCenter(center, space-between);
+                @extend %clearfix;
+            }
+            .video_wrap {width:54%; height:0; padding:0 0 30%;}
+            .txt_wrap {
+                width:40%; margin:0 0 0 6%; color:$gray3;
+                .name {
+                    font-size:em(22); font-weight:$regular; padding:em(35) 0 0; background-image:url(../../images/cinema/dotted_icon.gif);
+                    @include backgroundSoltC(0, 0, no-repeat, auto em(22));
+                    strong {font-size:em(48); letter-spacing:1px; color:$white; display:block; padding:0 0 em(10); }
+                }
+                .disc {font-size:em(34); line-height:em(44); font-style:italic; font-weight:$bold; padding:em(50) 0 0;}
+            }
+        }
+    }
+    .cinema_step02 {
+        background-color:$black;
+        .step_box01 {text-align:center; padding:140px 0 80px;}
+        .step_box02 {
+            height:0; padding:0 0 67.81%; background-image:url(../../images/cinema/cinema_img02.jpg); position:relative;
+            @include backgroundSoltC(50%, 0);
+            .txt_wrap {
+                width:100%; position:absolute; bottom:0; padding:0 120px;
+                @include boxSizing;
+            }
+            .txt_box {max-width:1480px; margin:0 auto; text-align:center;}
+            p {font-size:16px; color:$white; padding:0 0 25px; text-align:left;}
+            ol {
+                width:100%; padding:em(80) 0 em(75); background-color:rgba(0, 0, 0, .7); color:$white; font-size:em(22); font-weight:$semibold;
+                li {
+                    margin:0 em(37); display:inline-block;
+                    img {height:em(135); padding:0 0 em(25);}
+                    span {display:block;}
+                }
+            }
+        }
+    }
+    .cinema_step03 {
+        .step_box01 {
+            text-align:center; padding:140px 0 120px;
+            .link_box {width:280px; height:135px; background:url(../../images/cinema/cinema_logo01.gif) 0 0 no-repeat; display:inline-block; margin:50px 0 0; padding:0;}
+            .img_wrap {
+                margin:75px 0 0; position:relative;
+                img {width:100%;}
+                p {padding:0 120px; text-align:left; color:$white; position:absolute; bottom:25px; font-size:16px;}
+            }
+        }
+        .step_box02 {
+            margin:0 120px 120px; padding:95px 100px 100px; background-color:#222;
+            .interview_txt {
+                position:relative;
+                &:after {
+                    width:em(214); height:em(145); display:block; content:""; position:absolute; top:0; right:-7px; background-image:url(../../images/cinema/cinema_logo02.jpg);
+                    @include backgroundSoltC;
+                }
+                p {font-size:22px; line-height:30px; color:$gray4; padding:40px 0 0; font-weight:$regular;}
+            }
+            h1 {font-size:em(60); color:$white;}
+            .christopher_interview {
+                margin:em(60) 0 0;
+                @include displayFlexCenter(center, space-between);
+                @extend %clearfix;
+            }
+            .video_wrap {width:54%; height:0; padding:0 0 30%;}
+            .txt_wrap {
+                width:40%; margin:0 0 0 6%; color:$gray3;
+                .name {
+                    font-size:em(22); font-weight:$bold; padding:em(35) 0 0; background-image:url(../../images/cinema/dotted_icon.gif);
+                    @include backgroundSoltC(0, 0, no-repeat, auto em(22));
+                    strong {font-size:em(48); letter-spacing:1px; color:$white; display:block; padding:0 0 em(10); }
+                    span {display:block; font-weight:$regular; padding:5px 0 0;}
+                }
+                .disc {font-size:em(32); font-style:italic; font-weight:$bold; padding:em(50) 0 0;}
+            }
+            p.caution {font-size:16px; color:$gray4; font-weight:$regular; padding:15px 0 0;}
+        }
+    }
+    .cinema_step04 {
+        background-color:$black; overflow:hidden;
+        .step_box01 {
+            text-align:center; padding:140px 0 80px;
+            .link_box {padding:240px 0 0; background:url(../../images/cinema/cinema_logo03.jpg) 50% 0 no-repeat;}
+        }
+        .step_box02 {
+            max-width:1480px; padding:0 120px 120px; margin:0 auto;
+            @include boxSizing;
+            .slide_wrap {
+                position:relative; height:0; padding:0 0 56.25%;
+                &:before,
+                &:after {width:220px; height:720px; display:block; content:""; position:absolute; background:url(../../images/cinema/slide_dimmed.png) 0 0 no-repeat; left:50%; top:0; z-index:1;}
+                &:before {margin:0 0 0 -960px;}
+                &:after {
+                    margin:0 0 0 740px;
+                    @include rotate(180);
+                }
+            }
+            .slide_img {
+                width:100%; height:100%; position:absolute; top:0;
+                li {width:100%; position:absolute;}
+                img {width:100%;}
+            }
+            .slide_num {
+                position:absolute; right:40px; bottom:30px; z-index:10; font-size:16px; font-weight:$bold; color:$white;
+                @extend %clearfix;
+                .crr_num {float:left;}
+                span,
+                .max_num {
+                    float:left;
+                    @include opacity(.5);
+                }
+                span {display:inline-block; padding:0 10px;}
+            }
+            .slide_nav {
+                width:100%; position:absolute; top:50%; margin:-17px 0 0;
+                button {
+                    position:absolute; text-indent:-9999px;
+                    @include transition(opacity, .3s);
+                    &:after {width:25px; height:25px; display:block; content:""; border-left:2px solid $white; border-bottom:2px solid $white;}
+                    &.prev_btn {
+                        left:0; margin:0 0 0 -45px;
+                        &:after {@include rotate(45);}
+                    }
+                    &.next_btn {
+                        right:0; margin:0 -65px 0 0;
+                        &:after {@include rotate(-135);}
+                    }
+                    &.off {@include opacity(0);}
+                    &.on {@include opacity(1);}
+                }
+            }
+        }
+    }
+    .cinema_step05 {
+        background-color:#111;
+        .step_box01 {
+            text-align:center; padding:140px 0 80px;
+            .talk_txt {font-size:46px; font-weight:$bold; padding:45px 0 0; color:$white;}
+        }
+        .step_box02 {
+            max-width:1480px; padding:0 120px 50px; margin:0 auto; font-weight:$regular;
+            li {
+                background-color:#222; padding:em(100) em(100) 0 0; margin:em(30) 0 0;
+                &:first-child {margin:0;}
+                .platform_list {
+                    @include displayFlexCenter(center, space-between);
+                }
+                .logo_wrap {width:45%; text-align:center;}
+                .movie_list {
+                    width:55%;
+                    img {width:100%;}
+                }
+                p {
+                    min-height:em(100); font-size:16px; line-height:24px; color:#bbb; padding:15px 0 30px 45%;
+                    @include boxSizing;
+                    a {color:#bbb;}
+                }
+            }
+            p.caution {font-size:16px; line-height:24px; color:#bbb; padding:20px 0 0;}
+        }
+    }
+    .cinema_step06 {
+        background-color:$black;
+        .step_box01 {
+            text-align:center; padding:140px 0 0;
+            .talk_txt {font-size:46px; font-weight:$bold; padding:45px 0 0; color:$white;}
+            .link_box {
+                padding:60px 0 0;
+                a {
+                    &:after {
+                        width:86px; height:18px; display:inline-block; content:""; background-image:url(../../images/cinema/cinema_logo07.png); margin:0 0 0 10px;
+                        @include transition(background-image, .3s);
+                    }
+                    &:hover:after,
+                    &:focus:after {background-image:url(../../images/cinema/cinema_logo07_on.png);}
+                }
+            }
+            .img_wrap {
+                margin:80px 0 0; position:relative; text-align:left;
+                img {width:100%;}
+                p {
+                    position:absolute; line-height:24px; font-size:16px; color:$white; bottom:25px; padding:0 120px;
+                    @include boxSizing;
+                    span {margin:0 20px 0 0; display:inline-block;}
+                }
+            }
+        }
+    }
+    .cinema_step07 {
+        background-color:#111;
+        .step_box01 {
+            text-align:center; padding:140px 0 0;
+            .icon_box {
+                padding:45px 0 0; font-size:13px;
+                ol {
+                    display:inline-block; font-weight:$semibold; line-height:16px; color:$white;
+                    @extend %clearfix;
+                }
+                li {
+                    padding:130px 0 0; margin:0 0 0 70px; float:left;
+                    &:nth-of-type(1) {margin:0; background:url(../../images/cinema/cinema_logo08.jpg) 50% 0 no-repeat;}
+                    &:nth-of-type(2) {background:url(../../images/cinema/cinema_logo09.jpg) 50% 0 no-repeat;}
+                    em {font-size:14px;}
+                }
+            }
+            .img_wrap {
+                margin:80px 0 0; position:relative; text-align:left;
+                img {width:100%;}
+                p {
+                    width:100%; position:absolute; line-height:24px; font-size:16px; color:$white; bottom:25px; padding:0 120px;
+                    @include boxSizing;
+                }
+            }
+        }
+    }
+    .cinema_step08 {
+        background-color:$black;
+        .step_box01 {
+            text-align:center; padding:140px 0 0;
+            .img_wrap {
+                margin:70px 0 0; position:relative; text-align:left;
+                img {width:100%;}
+                p {
+                    width:100%; position:absolute; line-height:24px; font-size:16px; color:$white; bottom:25px; padding:0 120px;
+                    @include boxSizing;
+                }
+            }
+        }
+        .step_box02 {
+            text-align:center; padding:100px 120px 120px; color:$white; background-color:$black;
+            strong {font-size:76px; letter-spacing:3.2px;}
+            .video_wrap {width:100%; height:0; padding:0 0 56.25%; margin:65px 0 0;}
+        }
+    }
+}
+
+
+//no_desney
+/* cinema */
+#subVisual.cinema_visual_wo {
+    background-image:url(../../images/cinema/sub_visual.jpg); text-align:center; position:relative;
+    .txt_wrap {width:100%; position:absolute; bottom:em(65); color:$white; font-size:em(88); letter-spacing:3.2px}
+    &:before,
+    &:after {
+        display:block; content:""; position:absolute; bottom:30px;
+        @include backgroundSolt;
+    }
+    &:before {width:190px; height:103px; left:30px; background-image:url(../../images/cinema/cinema_partner_logo01.png);}
+    &:after {width:131px; height:58px; right:30px; background-image:url(../../images/cinema/cinema_partner_logo02.png);}
+}
+
+#container.cinema_contents_wo {
+    background-color:#111;
+    .step_title.white_title p {color:$gray4;}
+    .cinema_step01 {
+        .step_box01 {text-align:center; padding:140px 0 0;}
+        .step_box02{
+            max-width:1480px; padding:90px 120px 0; margin:0 auto;
+            p.cation {color:#bbb; font-size:16px; padding:20px 0 0;}
+        }
+        .monitor_compare {
+            .compare_box {border:2px solid $black; background-image:url(../../images/cinema/compare_oled.jpg);}
+            .lcd_screen .img_wrap {background-image:url(../../images/cinema/compare_lcd.jpg)}
+        }
+        .step_box03 {
+            margin:90px 120px 110px; padding:95px 100px 100px; background-color:#222;
+            h1 {font-size:em(60); color:$white;}
+            .rob_interview {
+                margin:em(70) 0 0;
+                @include displayFlexCenter(center, space-between);
+                @extend %clearfix;
+            }
+            .video_wrap {width:54%; height:0; padding:0 0 30%;}
+            .txt_wrap {
+                width:40%; margin:0 0 0 6%; color:$gray3;
+                .name {
+                    font-size:em(22); font-weight:$regular; padding:em(35) 0 0; background-image:url(../../images/cinema/dotted_icon.gif);
+                    @include backgroundSoltC(0, 0, no-repeat, auto em(22));
+                    strong {font-size:em(48); letter-spacing:1px; color:$white; display:block; padding:0 0 em(10); }
+                }
+                .disc {font-size:em(34); line-height:em(44); font-style:italic; font-weight:$bold; padding:em(50) 0 0;}
+            }
+        }
+    }
+    .cinema_step02 {
+        background-color:$black;
+        .step_box01 {text-align:center; padding:140px 0 80px;}
+        .step_box02 {
+            height:0; padding:0 0 67.81%; background-image:url(../../images/cinema/cinema_img02.jpg); position:relative;
+            @include backgroundSoltC(50%, 0);
+            .txt_wrap {
+                width:100%; position:absolute; bottom:0; padding:0 120px;
+                @include boxSizing;
+            }
+            .txt_box {max-width:1480px; margin:0 auto; text-align:center;}
+            p {font-size:16px; color:$white; padding:0 0 25px; text-align:left;}
+            ol {
+                width:100%; padding:em(80) 0 em(75); background-color:rgba(0, 0, 0, .7); color:$white; font-size:em(22); font-weight:$semibold;
+                li {
+                    margin:0 em(37); display:inline-block;
+                    img {height:em(135); padding:0 0 em(25);}
+                    span {display:block;}
+                }
+            }
+        }
+    }
+    .cinema_step03 {
+        .step_box01 {
+            text-align:center; padding:140px 0 120px;
+            .link_box {width:280px; height:135px; background:url(../../images/cinema/cinema_logo01.gif) 0 0 no-repeat; display:inline-block; margin:50px 0 0; padding:0;}
+            .img_wrap {
+                margin:75px 0 0; position:relative;
+                img {width:100%;}
+                p {padding:0 120px; text-align:left; color:$white; position:absolute; bottom:25px; font-size:16px;}
+            }
+        }
+        .step_box02 {
+            margin:0 120px 120px; padding:95px 100px 100px; background-color:#222;
+            .interview_txt {
+                position:relative;
+                &:after {
+                    width:em(214); height:em(145); display:block; content:""; position:absolute; top:0; right:-7px; background-image:url(../../images/cinema/cinema_logo02.jpg);
+                    @include backgroundSoltC;
+                }
+                p {font-size:22px; line-height:30px; color:$gray4; padding:40px 0 0; font-weight:$regular;}
+            }
+            h1 {font-size:em(60); color:$white;}
+            .christopher_interview {
+                margin:em(60) 0 0;
+                @include displayFlexCenter(center, space-between);
+                @extend %clearfix;
+            }
+            .video_wrap {width:54%; height:0; padding:0 0 30%;}
+            .txt_wrap {
+                width:40%; margin:0 0 0 6%; color:$gray3;
+                .name {
+                    font-size:em(22); font-weight:$bold; padding:em(35) 0 0; background-image:url(../../images/cinema/dotted_icon.gif);
+                    @include backgroundSoltC(0, 0, no-repeat, auto em(22));
+                    strong {font-size:em(48); letter-spacing:1px; color:$white; display:block; padding:0 0 em(10); }
+                    span {display:block; font-weight:$regular; padding:5px 0 0;}
+                }
+                .disc {font-size:em(32); font-style:italic; font-weight:$bold; padding:em(50) 0 0;}
+            }
+            p.caution {font-size:16px; color:$gray4; font-weight:$regular; padding:15px 0 0;}
+        }
+    }
+    .cinema_step04 {
+        background-color:$black; overflow:hidden;
+        .step_box01 {
+            text-align:center; padding:140px 0 80px;
+            .link_box {padding:240px 0 0; background:url(../../images/cinema/cinema_logo03.jpg) 50% 0 no-repeat;}
+        }
+        .step_box02 {
+            max-width:1480px; padding:0 120px 120px; margin:0 auto;
+            @include boxSizing;
+            .slide_wrap {
+                position:relative; height:0; padding:0 0 56.25%;
+                &:before,
+                &:after {width:220px; height:720px; display:block; content:""; position:absolute; background:url(../../images/cinema/slide_dimmed.png) 0 0 no-repeat; left:50%; top:0; z-index:1;}
+                &:before {margin:0 0 0 -960px;}
+                &:after {
+                    margin:0 0 0 740px;
+                    @include rotate(180);
+                }
+            }
+            .slide_img {
+                width:100%; height:100%; position:absolute; top:0;
+                li {width:100%; position:absolute;}
+                img {width:100%;}
+            }
+            .slide_num {
+                position:absolute; right:40px; bottom:30px; z-index:10; font-size:16px; font-weight:$bold; color:$white;
+                @extend %clearfix;
+                .crr_num {float:left;}
+                span,
+                .max_num {
+                    float:left;
+                    @include opacity(.5);
+                }
+                span {display:inline-block; padding:0 10px;}
+            }
+            .slide_nav {
+                width:100%; position:absolute; top:50%; margin:-17px 0 0;
+                button {
+                    position:absolute; text-indent:-9999px;
+                    @include transition(opacity, .3s);
+                    &:after {width:25px; height:25px; display:block; content:""; border-left:2px solid $white; border-bottom:2px solid $white;}
+                    &.prev_btn {
+                        left:0; margin:0 0 0 -45px;
+                        &:after {@include rotate(45);}
+                    }
+                    &.next_btn {
+                        right:0; margin:0 -65px 0 0;
+                        &:after {@include rotate(-135);}
+                    }
+                    &.off {@include opacity(0);}
+                    &.on {@include opacity(1);}
+                }
+            }
+        }
+    }
+    .cinema_step05 {
+        background-color:#111;
+        .step_box01 {
+            text-align:center; padding:140px 0 80px;
+            .talk_txt {font-size:46px; font-weight:$bold; padding:45px 0 0; color:$white;}
+        }
+        .step_box02 {
+            max-width:1480px; padding:0 120px 50px; margin:0 auto; font-weight:$regular;
+            li {
+                background-color:#222; padding:em(100) em(100) 0 0; margin:em(30) 0 0;
+                &:first-child {margin:0;}
+                .platform_list {
+                    @include displayFlexCenter(center, space-between);
+                }
+                .logo_wrap {width:45%; text-align:center;}
+                .movie_list {
+                    width:55%;
+                    img {width:100%;}
+                }
+                p {
+                    min-height:em(100); font-size:16px; line-height:24px; color:#bbb; padding:15px 0 30px 45%;
+                    @include boxSizing;
+                    a {color:#bbb;}
+                }
+            }
+            p.caution {font-size:16px; line-height:24px; color:#bbb; padding:20px 0 0;}
+        }
+    }
+    .cinema_step06 {
+        background-color:$black;
+        .step_box01 {
+            text-align:center; padding:140px 0 0;
+            .talk_txt {font-size:46px; font-weight:$bold; padding:45px 0 0; color:$white;}
+            .link_box {
+                padding:60px 0 0;
+                a {
+                    &:after {
+                        width:86px; height:18px; display:inline-block; content:""; background-image:url(../../images/cinema/cinema_logo07.png); margin:0 0 0 10px;
+                        @include transition(background-image, .3s);
+                    }
+                    &:hover:after,
+                    &:focus:after {background-image:url(../../images/cinema/cinema_logo07_on.png);}
+                }
+            }
+            .img_wrap {
+                margin:80px 0 0; position:relative; text-align:left;
+                img {width:100%;}
+                p {
+                    position:absolute; line-height:24px; font-size:16px; color:$white; bottom:25px; padding:0 120px;
+                    @include boxSizing;
+                    span {margin:0 20px 0 0; display:inline-block;}
+                }
+            }
+        }
+    }
+    .cinema_step07 {
+        background-color:#111;
+        .step_box01 {
+            text-align:center; padding:140px 0 0;
+            .icon_box {
+                padding:45px 0 0; font-size:13px;
+                ol {
+                    display:inline-block; font-weight:$semibold; line-height:16px; color:$white;
+                    @extend %clearfix;
+                }
+                li {
+                    padding:130px 0 0; margin:0 0 0 70px; float:left;
+                    &:nth-of-type(1) {margin:0; background:url(../../images/cinema/cinema_logo08.jpg) 50% 0 no-repeat;}
+                    &:nth-of-type(2) {background:url(../../images/cinema/cinema_logo09.jpg) 50% 0 no-repeat;}
+                    em {font-size:14px;}
+                }
+            }
+            .img_wrap {
+                margin:80px 0 0; position:relative; text-align:left;
+                img {width:100%;}
+                p {
+                    width:100%; position:absolute; line-height:24px; font-size:16px; color:$white; bottom:25px; padding:0 120px;
+                    @include boxSizing;
+                }
+            }
+        }
+    }
+    .cinema_step08 {
+        background-color:$black;
+        .step_box01 {
+            text-align:center; padding:140px 0 0;
+            .img_wrap {
+                margin:70px 0 0; position:relative; text-align:left;
+                img {width:100%;}
+                p {
+                    width:100%; position:absolute; line-height:24px; font-size:16px; color:$white; bottom:25px; padding:0 120px;
+                    @include boxSizing;
+                }
+            }
+        }
+        .step_box02 {
+            text-align:center; padding:100px 120px 120px; color:$white; background-color:$black;
+            strong {font-size:76px; letter-spacing:3.2px;}
+            .video_wrap {width:100%; height:0; padding:0 0 56.25%; margin:65px 0 0;}
+        }
+    }
+}

@@ -1,0 +1,291 @@
+@charset "UTF-8";
+
+/* gaming */
+#subVisual.gaming_visual {
+    background-image:url(../../images/gaming/sub_visual.jpg); text-align:center; position:relative;
+    .txt_wrap {width:100%; position:absolute; bottom:em(65); color:$white; font-size:em(88); letter-spacing:3.2px}
+    &:before,
+    &:after {
+        display:block; content:""; position:absolute; bottom:30px;
+        @include backgroundSolt;
+    }
+}
+#container.gaming_contents {
+    background-color:#111;
+    .step_title.white_title p {color:$gray4;}
+    .gaming_step01 {
+        padding:0 0 140px;
+        .step_box01 {
+            text-align:center; padding:140px 0 0;
+            .icon_box {width:100%; height:83px; margin:50px 0 0; background:url(../../images/gaming/gaming_logo01.jpg) 50% 0 no-repeat; display:inline-block;}
+            .img_wrap {
+                padding:76px 0 0;
+                img {width:100%;}
+            }
+        }
+        .step_box02 {
+            margin:90px 120px 0; padding:95px 100px 100px; background-color:#222;
+            h1 {font-size:em(60); color:$white;}
+            .linus_interview {
+                margin:em(70) 0 0;
+                @include displayFlexCenter(center, space-between);
+                @extend %clearfix;
+            }
+            .img_wrap {
+                width:54%; height:0; padding:0 0 30%; background-image:url(../../images/gaming/gaming_img02.jpg);
+                @include backgroundSoltC;
+            }
+            .txt_wrap {
+                width:40%; margin:0 0 0 6%; color:$gray3;
+                .name {
+                    font-size:em(22); font-weight:$regular; padding:em(35) 0 0; background-image:url(../../images/cinema/dotted_icon.gif);
+                    @include backgroundSoltC(0, 0, no-repeat, auto em(22));
+                    strong {font-size:em(48); letter-spacing:1px; color:$white; display:block; padding:0 0 em(10); }
+                }
+                .disc {font-size:em(36); line-height:em(42); font-style:italic; font-weight:$bold; padding:em(50) 0 0; letter-spacing:1px;}
+            }
+        }
+        .step_box03 {
+            margin:30px 120px 0; padding:100px 100px 60px; background-color:#222;
+            .txt_wrap {
+                position:relative; text-align:right; color:$white;
+                &:before {width:239px; height:89px; display:block; content:""; background:url(../../images/gaming/gaming_logo02.jpg) 0 0 no-repeat; position:absolute; left:0; top:0;}
+                h1 {font-size:em(60);}
+                p {
+                    font-size:em(22); line-height:em(30); padding:em(40) 0 0; color:$gray4;
+                    span {display:block; padding:em(10) 0 0;}
+                }
+            }
+            .disc {
+                font-size:26px; color:$gray1; font-weight:$semibold; text-align:center; padding:70px 0 15px;
+                @extend %clearfix;
+                li {width:50%; float:left;}
+                span {
+                    width:220px; height:48px; display:inline-block; background-color:$white; line-height:48px;
+                    @include borderRadius(24px);
+                    @include boxShadow(2px 0px 30px -5px $black);
+                }
+            }
+            .img_wrap {
+                position:relative; color:$white;
+                .lcd_txt,
+                .oled_txt {position:absolute; bottom:em(30); font-size:em(34); line-height:em(38);}
+                .lcd_txt {left:em(40);}
+                .oled_txt {
+                    right:em(40);
+                    strong {
+                        width:em(170); height:em(36); text-indent:-9999px; display:block; margin:5px 0 0;
+                        background:url(../../images/common/lg_logo_icon.png) 0 0 no-repeat; background-size: contain;
+                    }
+                }
+                strong {display:block; font-size:em(45);}
+            }
+            img {width:100%;}
+            p.caution {font-size:16px; color:#bbb; padding:15px 0 0; font-weight:$regular;}
+        }
+        .step_box04 {
+            margin:30px 120px 0; padding:100px; background-color:#222;
+            h1 {font-size:em(60); color:$white;}
+            .kaustubh_interview {
+                @include displayFlexCenter(center, space-between);
+                @extend %clearfix;
+            }
+            .video_wrap {width:54%; height:0; padding:0 0 30%; margin:0 0 0 6%;}
+            .txt_wrap {
+                width:40%; color:$gray3;
+                .name {
+                    font-size:em(22); font-weight:$regular; padding:em(35) 0 0; background-image:url(../../images/cinema/dotted_icon.gif);
+                    @include backgroundSoltC(0, 0, no-repeat, auto em(22));
+                    strong {font-size:em(48); letter-spacing:1px; color:$white; display:block; padding:0 0 em(10);}
+                }
+                .disc {font-size:em(32); line-height:em(40); font-style:italic; font-weight:$bold; padding:em(35) 0 0; letter-spacing:1px;}
+                img {margin:em(40) 0 0;}
+            }
+        }
+        .step_box05 {
+            margin:30px 120px 0; padding:100px 100px 40px; background-color:#222;
+            .txt_wrap {
+                position:relative; text-align:right; color:$white;
+                &:before {width:354px; height:102px; display:block; content:""; background:url(../../images/gaming/gaming_logo04.jpg) 0 0 no-repeat; position:absolute; left:0; top:0;}
+                h1 {font-size:em(60);}
+                p {
+                    font-size:em(22); line-height:em(30); padding:em(40) 0 0; color:$gray4;
+                    span {display:block; padding:em(10) 0 0;}
+                }
+            }
+            img {width:100%; margin:em(70) 0 0;}
+            p.caution {font-size:16px; color:#bbb; padding:15px 0 0; font-weight:$regular; line-height:24px;}
+        }
+        .step_box06 {
+            margin:30px 120px 0; padding:100px 100px 25px; background-color:#222;
+            .txt_wrap {
+                @include displayFlexCenter(center, space-between);
+                @extend %clearfix;
+            }
+            img {width:54%;}
+            .txt_box {
+                width:44%; margin:0 2% 0 0;
+                h1 {font-size:em(60); color:$white;}
+                p {
+                    font-size:em(22); line-height:em(30); font-weight:$regular; color:$gray4; padding:em(30) 0 0;
+                    span {display:block; padding:em(10) 0 0;}
+                }
+            }
+            p.caution {
+                min-height:120px; padding:em(15) 0 30px 46%; color:#bbb; font-size:16px; line-height:24px; font-weight:$regular;
+                @include boxSizing;
+            }
+        }
+    }
+    .gaming_step02 {
+        padding:0 0 140px; background-color:$black;
+        .step_box01 {text-align:center; padding:140px 0 0;}
+        .step_box02{
+            max-width:1480px; padding:90px 120px 0; margin:0 auto;
+            p.cation {color:#bbb; font-size:16px; padding:20px 0 0;}
+            .monitor_compare {
+                .compare_wrap {
+                    &:after {width:240px; height:89px; display:block; content:""; background:url(../../images/gaming/compare_logo04.png) 0 0 no-repeat; position:absolute; bottom:45px; right:45px; z-index:10;}
+                }
+                .compare_box {border:2px solid $black; background-image:url(../../images/gaming/compare_oled02.jpg);}
+                .lcd_screen .img_wrap {background-image:url(../../images/gaming/compare_lcd02.jpg)}
+            }
+        }
+        .step_box03 {
+            margin:75px 120px 0; padding:100px 100px; background-color:#222;
+            .txt_wrap {
+                position:relative; color:$white;
+                &:before {width:208px; height:101px; display:block; content:""; background:url(../../images/gaming/gaming_logo05.gif) 0 0 no-repeat; position:absolute; right:0; top:0;}
+                h1 {font-size:em(60);}
+                p {
+                    font-size:em(22); line-height:em(30); padding:em(40) 0 0; color:$gray4;
+                    span {display:block; padding:em(10) 0 0;}
+                }
+            }
+            img {width:100%; margin:em(70) 0 0;}
+            p.caution {font-size:16px; color:#bbb; padding:50px 0 0; font-weight:$regular;}
+        }
+    }
+    .gaming_step03 {
+        background-color:#111;
+        .step_box01 {text-align:center; padding:140px 0 0;}
+        .step_box02 {
+            height:0; padding:0 0 56.5%; position:relative; margin:70px 0 0; background-image:url(../../images/gaming/gaming_img08.jpg);
+            @include backgroundSoltC;
+
+        }
+        .step_box03 {
+            .box_wrap {
+                width:100%; padding:120px; background-color:#111;
+                @include boxSizing;
+            }
+            ol {
+                max-width:1680px; margin:0 auto; background-color:#222; color:$gray4;
+                @extend %clearfix;
+            }
+            li {
+                width:33.3%; height:370px; padding:80px 0 0; float:left; text-align:center; position:relative;
+                &:before {width:2px; height:100%; display:block; content:""; position:absolute; left:0; top:0; background-color:#131313;}
+                .img_wrap {
+                    height:111px;
+                    @include displayFlexCenter;
+                }
+                strong {display:block; font-size:24px; padding:15px 0 0; color:$white;}
+                p {font-size:20px; line-height:22px; padding:10px 0 0;}
+                &:nth-of-type(1):before {display:none;}
+                a {
+                    font-size:16px; display:inline-block; position:absolute; font-weight:$semibold; padding:0 20px 3px 0; bottom:75px; color:$white;
+                    left:50%; transform:translate(-50%,0);
+                    @include transition(padding, .2s);
+                    &:after {width:100%; height:1px; position:absolute; display:block; content:""; background-color:$white; bottom:0;}
+                    i {
+                        width:11px; height:7px; display:block; position:absolute; top:4px; right:0;
+                        &:before {
+                            width:4px; height:4px; display:block; content:""; border-right:1px solid $white; border-bottom:1px solid $white; position:absolute; right:0; top:1px;
+                            @include rotate(-45);
+                        }
+                        &:after {width:11px; height:1px; display:block; content:""; position:absolute; top:50%; left:0; background-color:$white;}
+                    }
+                    &:hover,
+                    &:focus {padding:0 25px 3px 0;}
+                }
+            }
+        }
+    }
+    .gaming_step04 {
+        background-color:$black;
+        .step_box01 {
+            text-align:center; padding:140px 0 0;
+            .icon_box {
+                padding:45px 0 0; font-size:13px;
+                ol {
+                    display:inline-block; font-weight:$semibold; line-height:16px; color:$white;
+                    @extend %clearfix;
+                }
+                li {
+                    padding:130px 0 0; margin:0 0 0 70px; float:left;
+                    &:nth-of-type(1) {margin:0; background:url(../../images/gaming/gaming_logo09.jpg) 50% 0 no-repeat;}
+                    &:nth-of-type(2) {background:url(../../images/gaming/gaming_logo10.jpg) 50% 0 no-repeat;}
+                    em {font-size:14px;}
+                }
+            }
+            .img_wrap {
+                margin:80px 0 0; position:relative; text-align:left;
+                img {width:100%;}
+                p {
+                    width:100%; position:absolute; line-height:24px; font-size:16px; color:$white; bottom:25px; padding:0 120px;
+                    @include boxSizing;
+                }
+            }
+        }
+    }
+    .gaming_step05 {
+        background-color:#111;
+        .step_box01 {
+            text-align:center; padding:140px 0 0;
+            .img_wrap {
+                margin:80px 0 0; position:relative; text-align:left;
+                img {width:100%;}
+            }
+        }
+    }
+    .gaming_step06 {
+        background-color:$black;
+        .step_box01 {
+            text-align:center; padding:140px 0 0;
+            .talk_txt {font-size:46px; font-weight:$bold; padding:45px 0 0; color:$white;}
+            .link_box {
+                padding:60px 0 0;
+                a {
+                    &:after {
+                        width:86px; height:18px; display:inline-block; content:""; background-image:url(../../images/cinema/cinema_logo07.png); margin:0 0 0 10px;
+                        @include transition(background-image, .3s);
+                    }
+                    &:hover:after,
+                    &:focus:after {background-image:url(../../images/cinema/cinema_logo07_on.png);}
+                }
+            }
+            .img_wrap {
+                margin:80px 0 0; position:relative; text-align:left;
+                img {width:100%;}
+                p {
+                    width:100%; position:absolute; line-height:24px; font-size:16px; color:$white; bottom:25px; padding:0 120px;
+                    @include boxSizing;
+                }
+            }
+        }
+        .step_box02 {
+            text-align:center; padding:100px 120px 120px; color:$white; background-color:#111;
+            strong {font-size:76px; letter-spacing:2.2px;}
+            .video_wrap {width:100%; height:0; padding:0 0 56.25%; margin:65px 0 0;}
+        }
+    }
+}
+.gaming_contents #bottomLineup table thead .img_wrap img {width:75%;}
+
+
+
+
+
+
+
